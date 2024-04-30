@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Resume</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                </div>
+                <h1 id="username" >Charlie Leestein</h1>
+                <h4 id="persona-tag" >Algorithm Engineer</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">Basic Info</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">Name</label><span class="label-value">Charlie Leestein</span></li>
+                    <li>
+                        <label class="left-label">Degree</label><span class="label-value">Master</span></li>
+                    <li>
+                        <label class="left-label">School</label><span class="label-value">MUN</span></li>
+                    <li>
+                        <label class="left-label">City/Country</label><span class="label-value">St. John's, Canada</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">Contact Info</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">Tel</label><span class="label-value">+1 (825)986-0839</span></li>
+                    <li>
+                        <label class="left-label">E-mail</label><span class="label-value">charlie.leestein@gmail.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">https://www.github.com/</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">Skills</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">c++</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Deep learning</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Web</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">Tech Stack</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">DL</label><span class="label-value">Tensorflow, Pytorch, Caffe</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">Web</label><span class="label-value">Django、MongoDB、Flask、MySQL、Redis</span></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">Education Background</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Memorial University of Newfoundland (Master) 2016-2020</h3>
+                        <p>
+                            Major: Math
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Memorial University of Newfoundland (Bachelor) 2020-2022</h3>
+                        <p>
+                            Major: Scientific Computing
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">Work Experiences</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Internship at Sangfor Ltd  2021</h3>
+                        <p>A machine learning model was developed and trained to identify network assets, and the network asset recognition rate reached 95%.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Work as an algorithm engineer at Sangfor Ltd  2022-now</h3>
+                        <p>It had achieved great success where applying machine learning models to company projects for feature extraction to identify assets. So far, 9 invention patents have been published in related fields.
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">Program</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Face Recognition-tensorflow</h3>
+                        <p>
+                            An efficient face alignment system based on explicit 3D face modeling; a CNN architecture with a locally connected layer, which, unlike regular convolutional layers, learns different features from each region in the image. At the same time, the system achieves similar results by training 60 different CNNs on patches containing ten regions, three scales, and RGB or grayscale channels. During the test phase, 160 bottleneck features are extracted from each patch, plus its horizontal flip, to form a 19200-dimensional feature vector (160×2×60). The proposed CNN architecture also uses a locally connected layer. Its verification results are obtained by training a joint Bayesian classifier on the 19200-dimensional feature vector extracted by this CNN.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Asset Recognition</h3>
+                        <p>
+                            Asset identification is divided into three parts:
+                        </p>     
+                        <p>
+                            1) Clustering: First, the kmeans algorithm with adaptive K value is used for preliminary clustering, and then the Simhash algorithm is used for secondary clustering. The final asset clustering accuracy reaches more than 95%.
+                        </p>  
+                        <p>
+                            2) Recommended keywords: First, the TF-IDF algorithm is used to generate keywords, and smoothing technology is added. Then the public keywords generated by each asset are used as recommended keywords.
+                        </p>
+                        <p>
+                            3) Generate fingerprints: Select the number m of 1/n public keyword groups with the highest weight of a type of asset data (the size of m value is determined according to the specific scenario and effect, generally m=3) and design as follows:
+                        </p>
+                        <p>   
+                            i) Combined fingerprint priority: key field>important field>remaining public keywords (descending order)
+                        </p>
+                        <p>
+                            ii) Combined fingerprint selection design: the weight of any selected keyword must reach the threshold
+                        </p>
+                        <p> 
+                            iii) Adaptive threshold design: Use threshold adaptive method [the threshold is 1/n of the highest weight of each component keyword, the default n=2]
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">Rewards</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Won the first prize of academic scholarship</h3>
+                        
+                    </li> 
+                    <li>
+                        <h3>Obtained Computer high-level Certificate</h3>
+                    </li>           
+                    <li>
+                        <h3>Obtained 9 patents during work</h3>
+                    </li>              
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">self-assessment</span></h2>
+                <hr>
+                <ul class="assetment-list">
+                    <li>
+                        <h3>Good learning capacity</h3>
+                    </li>
+                    <li>
+                        <h3>Excellent time management capacity</h3>
+                    </li>
+                    <li>
+                        <h3>Optimistic, cheerful and passionate</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
